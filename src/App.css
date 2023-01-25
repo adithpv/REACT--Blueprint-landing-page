@@ -1,0 +1,144 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+/* css variables */
+:root {
+  --primary-color: #379cf6;
+  --heading-color: #fff;
+  --btn-primary-bg: #379cf6;
+  --btn-secondary-bg: #090238;
+
+  --team-card-bg: #1b2352;
+  --link-color: #fff;
+  --link-active: #379cf6;
+
+  --card-bg: linear-gradient(
+    to right,
+    #1a11e7,
+    #0034d6,
+    #0645c2,
+    #2d50a9,
+    #45588e
+  );
+
+  --counter-color: linear-gradient(
+    90deg,
+    #02bba6 30%,
+    rgba(29, 129, 176, 1) 55%,
+    rgba(35, 93, 173, 1) 75%
+  );
+
+  --body-bg: #00000d;
+
+  --newsletter-bg: linear-gradient(
+    to right top,
+    #1149e7,
+    #134ae2,
+    #164bde,
+    #194bd9,
+    #1c4cd4
+  );
+
+  --testimonial-bg: #1a0f4f;
+  --font-name: "Roboto", sans-serif;
+  --small-text-color: rgba(255, 255, 255, 0.774);
+  --icon-bg: #151e4f;
+}
+
+.light-theme {
+  --body-bg: rgb(255, 255, 255);
+  --heading-color: #0c123d;
+  --btn-secondary-bg: #816aff;
+  --btn-primary-bg: #fff;
+  --primary-color: #816aff;
+  --counter-color: #fff;
+  --counter-section-bg: #816aff;
+  --link-color: #0c123d;
+  --link-active: #816aff;
+  --newsletter-bg: linear-gradient(
+    180deg,
+    rgba(189, 243, 255, 1) 29%,
+    rgba(193, 243, 255, 1) 50%,
+    rgba(226, 250, 255, 1) 78%
+  );
+  --small-text-color: #000;
+  --card-bg: #fff;
+  --testimonial-bg: #f7f7f7;
+  --team-card-bg: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--body-bg);
+  font-family: var(--font-name);
+}
+
+a {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+h1,
+h2 {
+  color: var(--heading-color);
+  font-size: 2rem;
+}
+
+section {
+  padding: 60px 0px;
+}
+
+.container {
+  width: 1140px;
+  padding: 0px 15px;
+  margin: auto;
+}
+
+.description {
+  color: var(--small-text-color);
+  line-height: 30px;
+  font-size: 0.9rem;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--primary-color);
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.light-theme .counter {
+  background: var(--counter-section-bg);
+}
+
+.light-theme .secondary btn {
+  border: 1px solid var(--primary-color);
+  color: #090238;
+  font-weight: 600;
+}
+
+.light-theme a {
+  font-weight: 500;
+}
+
+.light-theme .team__img {
+  background: #ddd;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 40px 0px;
+  }
+}
